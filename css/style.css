@@ -2328,11 +2328,11 @@ body::after {
 
 .projects-stack {
     display: grid;
-    gap: clamp(1.2rem, 3vw, 1.8rem);
+    gap: clamp(1rem, 2.4vw, 1.4rem);
 }
 
 .projects-group {
-    padding: clamp(1.2rem, 3vw, 2rem);
+    padding: clamp(1rem, 2.4vw, 1.5rem);
     border-radius: 32px;
     border: 1px solid rgba(121, 90, 61, 0.18);
     background: rgba(255, 252, 247, 0.82);
@@ -2342,7 +2342,7 @@ body::after {
 
 .projects-group-header {
     max-width: 760px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.1rem;
 }
 
 .projects-group-kicker {
@@ -2368,7 +2368,7 @@ body::after {
 .projects-event-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: clamp(0.9rem, 2vw, 1.2rem);
+    gap: clamp(0.75rem, 1.8vw, 1rem);
 }
 
 .project-mini {
@@ -2381,7 +2381,7 @@ body::after {
 
 .project-mini-media {
     margin: 0;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 9;
     overflow: hidden;
     background: #ebdfd0;
 }
@@ -2400,7 +2400,7 @@ body::after {
 }
 
 .project-mini-body {
-    padding: 1rem 1rem 1.15rem;
+    padding: 0.9rem 0.9rem 1rem;
 }
 
 .project-mini-tag,
@@ -2426,35 +2426,35 @@ body::after {
 }
 
 .project-mini h4 {
-    margin: 0.7rem 0 0.72rem;
-    font-size: 1.2rem;
+    margin: 0.6rem 0 0.55rem;
+    font-size: 1.12rem;
     color: #261c14;
 }
 
 .project-mini p {
     color: #5f5143;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .projects-detailed {
     display: grid;
-    gap: 1.15rem;
+    gap: 0.95rem;
 }
 
 .project-entry {
     display: grid;
     grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
-    gap: clamp(1rem, 3vw, 1.6rem);
+    gap: clamp(0.85rem, 2.6vw, 1.25rem);
     align-items: start;
-    padding: clamp(1rem, 2vw, 1.4rem);
-    border-radius: 28px;
+    padding: clamp(0.9rem, 1.8vw, 1.15rem);
+    border-radius: 24px;
     border: 1px solid rgba(121, 90, 61, 0.16);
     background: rgba(247, 241, 232, 0.82);
 }
 
 .project-entry-copy {
     display: grid;
-    gap: 0.82rem;
+    gap: 0.68rem;
 }
 
 .project-entry-meta {
@@ -2470,7 +2470,7 @@ body::after {
 }
 
 .project-entry h3 {
-    font-size: clamp(1.4rem, 2vw, 1.85rem);
+    font-size: clamp(1.28rem, 1.9vw, 1.68rem);
     color: #241a13;
 }
 
@@ -2479,13 +2479,13 @@ body::after {
 }
 
 .project-entry-lead {
-    font-size: 1.02rem;
+    font-size: 0.98rem;
     color: #3a2f26;
 }
 
 .project-note {
-    padding: 1rem 1rem 1.05rem;
-    border-radius: 20px;
+    padding: 0.85rem 0.9rem 0.9rem;
+    border-radius: 18px;
     border-left: 4px solid #a47b53;
     background: rgba(255, 251, 246, 0.92);
 }
@@ -2502,7 +2502,7 @@ body::after {
 .project-gallery {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.7rem;
+    gap: 0.55rem;
 }
 
 .project-gallery-single {
@@ -2512,7 +2512,7 @@ body::after {
 .project-gallery-item {
     margin: 0;
     overflow: hidden;
-    border-radius: 22px;
+    border-radius: 18px;
     background: #e8dccb;
     box-shadow: 0 14px 28px rgba(31, 23, 16, 0.08);
 }
@@ -2522,21 +2522,19 @@ body::after {
     height: 100%;
     display: block;
     object-fit: cover;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 3 / 2;
 }
 
 .project-gallery-single img,
 .project-gallery-two img {
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 9;
 }
 
-.project-gallery-three .project-gallery-item:first-child,
-.project-gallery-five .project-gallery-item:first-child {
+.project-gallery-three .project-gallery-item:first-child {
     grid-column: span 2;
 }
 
-.project-gallery-three .project-gallery-item:first-child img,
-.project-gallery-five .project-gallery-item:first-child img {
+.project-gallery-three .project-gallery-item:first-child img {
     aspect-ratio: 16 / 9;
 }
 
@@ -2552,19 +2550,17 @@ body::after {
 
 @media (max-width: 760px) {
     .projects-group {
-        padding: 1rem;
+        padding: 0.9rem;
         border-radius: 24px;
     }
 
     .projects-event-grid,
     .project-gallery,
-    .project-gallery-three,
-    .project-gallery-five {
+    .project-gallery-three {
         grid-template-columns: 1fr;
     }
 
-    .project-gallery-three .project-gallery-item:first-child,
-    .project-gallery-five .project-gallery-item:first-child {
+    .project-gallery-three .project-gallery-item:first-child {
         grid-column: auto;
     }
 }
